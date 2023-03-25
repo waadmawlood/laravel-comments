@@ -1,10 +1,10 @@
 <?php
 
-namespace BeyondCode\Comments\Traits;
+namespace Waad\Comments\Traits;
 
 
 use Illuminate\Database\Eloquent\Model;
-use BeyondCode\Comments\Contracts\Commentator;
+use Waad\Comments\Contracts\Commentator;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasComments
