@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\Comments\Traits;
+namespace Waad\Comments\Traits;
 
 
 trait CanComment
