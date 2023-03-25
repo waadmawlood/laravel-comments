@@ -1,10 +1,10 @@
 <?php
 
-namespace BeyondCode\Comments;
+namespace Waad\Comments;
 
 use Exception;
 use Illuminate\Database\Eloquent\Model;
-use BeyondCode\Comments\Traits\HasComments;
+use Waad\Comments\Traits\HasComments;
 
 class Comment extends Model
 {
