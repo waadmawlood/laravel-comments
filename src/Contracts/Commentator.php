@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\Comments\Contracts;
+namespace Waad\Comments\Contracts;
 
 
 interface Commentator
