@@ -20,7 +20,7 @@ $post->commentAsUser($user, 'This is a comment from someone else');
 You can install the package via composer:
 
 ```bash
-composer require beyondcode/laravel-comments
+composer require waad/laravel-comments
 ```
 
 The package will automatically register itself.
@@ -28,7 +28,7 @@ The package will automatically register itself.
 You can publish the migration with:
 
 ```bash
-php artisan vendor:publish --provider="BeyondCode\Comments\CommentsServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Waad\Comments\CommentsServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the media-table by running the migrations:
@@ -40,7 +40,7 @@ php artisan migrate
 You can publish the config-file with:
 
 ```bash
-php artisan vendor:publish --provider="BeyondCode\Comments\CommentsServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Waad\Comments\CommentsServiceProvider" --tag="config"
 ```
 
 ## Usage
@@ -53,7 +53,7 @@ To let your models be able to receive comments, add the `HasComments` trait to t
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use BeyondCode\Comments\Traits\HasComments;
+use Waad\Comments\Traits\HasComments;
 
 class Post extends Model
 {
@@ -103,7 +103,7 @@ If you want to automatically approve a comment for a specific user (and optional
 ```php
 namespace App\Models;
 
-use BeyondCode\Comments\Contracts\Commentator;
+use Waad\Comments\Contracts\Commentator;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable implements Commentator
