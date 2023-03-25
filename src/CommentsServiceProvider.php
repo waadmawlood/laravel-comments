@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\Comments;
+namespace Waad\Comments;
 
 use Illuminate\Support\ServiceProvider;
 
