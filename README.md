@@ -10,7 +10,7 @@ Add the ability to associate comments to your Laravel Eloquent models. The comme
 ```php
 $post = Post::find(1);
 
-$post->comment('This is a comment');
+$post->addComment('This is a comment');
 
 $post->commentAsUser($user, 'This is a comment from someone else');
 ```
